@@ -51,7 +51,8 @@ with ThreadPoolExecutor(max_workers=10) as executor:
 
 for future in as_completed(processes):
     future.result()
-    executor.shutdown(wait=True)
+    
+    
 end = time.time()
 timetaken = end - start
 
