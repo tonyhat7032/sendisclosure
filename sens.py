@@ -54,6 +54,6 @@ for future in as_completed(processes):
     
     
 end = time.time()
-timetaken = end - start
+timetaken = (end - start)/60
 
-print('Time taken =', timetaken)
+print('Time taken =', timetaken, 'minutes')
